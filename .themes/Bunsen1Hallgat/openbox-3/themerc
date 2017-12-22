@@ -1,0 +1,166 @@
+!! http://hallgat.deviantart.com
+
+
+
+!! menu title
+menu.title.bg: flat gradient vertical bevel1
+menu.title.bg.color: #F5F5F5
+menu.title.bg.colorTo: #cecece
+menu.title.text.color: #000000
+menu.title.text.justify: right
+
+menu.separator.color: #000000
+
+menu.items.bg: flat solid
+menu.items.bg.color: #cecece
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #8A8A8A
+
+menu.items.active.bg: flat gradient vertical bevel1
+menu.items.active.bg.color: #7e7e7e
+menu.items.active.bg.colorTo:#7e7e7e
+menu.items.active.text.color: #000000
+menu.bullet.selected.image.color: #000000
+
+!! focused window settings
+
+window.active.title.bg: flat gradient vertical bevel1
+window.active.title.bg.color: #F5F5F5
+window.active.title.bg.colorTo: #cecece
+window.active.title.separator.color: #cecece
+
+window.active.handle.bg: flat gradient vertical bevel1
+window.active.handle.bg.color: #cecece
+window.active.handle.bg.colorTo: #cecece
+
+window.active.grip.bg: parentrelative
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #000000
+
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #101010
+window.active.button.*.hover.image.color: #ffffff
+window.active.button.*.pressed.image.color: #000000
+window.active.button.disabled.image.color: #cecece
+
+!! unfocused window settings
+
+window.inactive.title.bg: flat gradient vertical bevel1
+window.inactive.title.bg.color: #E0E0E0
+window.inactive.title.bg.colorTo: #cecece
+window.inactive.title.separator.color: #cecece
+
+window.inactive.handle.bg: flat gradient vertical bevel1
+window.inactive.handle.bg.color: #cecece
+window.inactive.handle.bg.colorTo: #cecece
+
+window.inactive.grip.bg: parentrelative
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #666666
+
+window.inactive.button.*.image.color: #666666
+window.inactive.button.*.hover.image.color: #ffffff
+window.inactive.button.*.pressed.image.color: #000000
+window.inactive.button.disabled.image.color: #cecece
+
+!! window text
+window.label.text.justify: left
+window.active.label.bg: parentrelative
+window.active.label.bg.color: #333333
+window.active.label.bg.colorTo: #2d2d2d
+window.active.label.text.color:#000000
+window.inactive.label.bg: parentrelative
+window.inactive.label.bg.color: #333333
+window.inactive.label.bg.colorTo: #2d2d2d
+window.inactive.label.text.color: #777777
+
+!! window buttons
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.bg.color: #ffffff
+window.active.button.unpressed.bg.colorTo: #333333
+window.active.button.unpressed.image.color: #aaaaaa
+window.active.button.unpressed.bg.border.color: #2d2d2d
+
+window.active.button.pressed.bg: parentrelative
+window.active.button.pressed.bg.color: #000000
+window.active.button.pressed.bg.colorTo: #353535
+window.active.button.pressed.image.color: #000000
+window.active.button.pressed.bg.border.color: #2d2d2d
+
+window.active.button.disabled.bg: parentrelative
+window.active.button.disabled.bg.color: #999999
+window.active.button.disabled.bg.colorTo: #222222
+window.active.button.disabled.image.color: #777777
+window.active.button.disabled.bg.border.color: #2d2d2d
+
+window.active.button.hover.bg: parentrelative
+window.active.button.hover.bg.color: #ffffff
+window.active.button.hover.bg.colorTo: #999999
+window.active.button.hover.image.color: #6EAFDF
+window.active.button.hover.bg.border.color: #2d2d2d
+
+window.active.button.toggled.bg: parentrelative
+window.active.button.toggled.bg.color: #ffffff
+window.active.button.toggled.bg.colorTo: #333333
+window.active.button.toggled.image.color: #aaaaaa
+window.active.button.toggled.bg.border.color: #2d2d2d
+
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.bg.color: #cccccc
+window.inactive.button.unpressed.bg.colorTo: #222222
+window.inactive.button.unpressed.image.color: #888888
+window.inactive.button.unpressed.bg.border.color: #2d2d2d
+
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.pressed.bg.color: #000000
+window.inactive.button.pressed.bg.colorTo: #353535
+window.inactive.button.pressed.image.color: #000000
+window.inactive.button.pressed.bg.border.color: #2d2d2d
+
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.bg.color: #777777
+window.inactive.button.disabled.bg.colorTo: #111111
+window.inactive.button.disabled.image.color: #555555
+window.inactive.button.disabled.bg.border.color: #2d2d2d
+
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.hover.bg.color: #ffffff
+window.inactive.button.hover.bg.colorTo: #777777
+window.inactive.button.hover.image.color: #6EAFDF
+window.inactive.button.hover.bg.border.color: #2d2d2d
+
+window.inactive.button.toggled.bg: parentrelative
+window.inactive.button.toggled.bg.color: #cccccc
+window.inactive.button.toggled.bg.colorTo: #222222
+window.inactive.button.toggled.image.color: #888888
+window.inactive.button.toggled.bg.border.color: #2d2d2d
+!! misc settings
+border.color: #000000
+border.width: 0
+padding.width: 3
+padding.height: 3
+
+window.handle.width: 3
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap.x: -3
+menu.overlap.y: 0
+
+
+
+!! Miscellaneous settings
+border.color: #b0b0b0
+menu.border.color: #3C3D3E
+
+!! OSD
+osd.bg: flat gradient vertical bevel1
+osd.bg.color: #cecece
+osd.bg.colorTo: #cecece
+osd.label.bg: parentrelative
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #101010
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #101010
+osd.label.text.color: #101010

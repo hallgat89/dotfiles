@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Printers
+Comment=Printer settings
+Exec=system-config-printer
+Icon=printer
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;

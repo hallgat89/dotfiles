@@ -1,0 +1,29 @@
+
+
+OPTIONS=windowtype:tty
+OPTIONS=popup_dialog
+OPTIONS=align_message:bottom
+OPTIONS=align_status:right
+OPTIONS=boulder:0
+OPTIONS=autodig,!autopickup
+
+OPTIONS=windowcolors:menu white/black message green/yellow status white/blue text white/black
+
+OPTIONS=color
+MENUCOLOR="blessed"=cyan&bold
+MENUCOLOR="cursed"=orange&bold
+MENUCOLOR="uncursed"=green
+MENUCOLOR="loadstone\|wand \(of\|called\) cancellation"=underline
+MENUCOLOR="Amulet of Yendor named"=magenta                           # color only the real Amulet
+MENUCOLOR="gold piece"=yellow
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta  # forgotten spell
+# This version will work on NAO.
+# MENUCOLOR="[a-zA-Z ]+[ ]+[0-9]+\*[ ]+[a-z]+[ ]+[0-9]+%"=magenta  # forgotten spell
+
+OPTIONS=menucolors
+MENUCOLOR=" blessed "=green
+MENUCOLOR=" holy "=green
+MENUCOLOR=" cursed "=red
+MENUCOLOR=" unholy "=red
+MENUCOLOR=" cursed .* (being worn)"=orange&underline
+

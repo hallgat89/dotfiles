@@ -1,0 +1,46 @@
+# Theme file. This can be absolute path or relative to
+# /usr/share/moc/themes/ (depends on installation prefix) or ~/.moc/themes/
+
+#If config unsecure, remove group permissions!
+
+#Default Music folder
+MusicDir = "/home/hallgat/Dropbox/Music"
+#Fastdir1 = "~/Letöltések" #doesnt work
+
+#needs a script
+OnSongChange = "/home/hallgat/.moc/onsongchange.sh"
+
+
+#StartInMusicDir = yes
+
+# The theme used when running on on xterm
+Theme = autumn_theme
+XTermTheme = autumn_theme
+
+# MOC directory - where pid file, socket, and state files are stored.
+# You can use ~ at the begining
+MOCDir = ~/.moc
+
+# ALSA mixer device.
+AlsaMixer1 = Master
+ 
+# Second ALSA mixer device.
+AlsaMixer2 = PCM
+ 
+# ALSA output device.
+AlsaDevice = default
+
+# Remember list
+SavePlaylist = yes
+
+# Turn on repeat.
+Repeat = yes
+
+# Blinking cursor
+UseCursorSelection = yes
+
+# Delete files
+ExecCommand8 = "mv %f .local/share/Trash/files/"
+
+# Fav songs
+ExecCommand1 = "/home/hallgat/.moc/favsong.sh"

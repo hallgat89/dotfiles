@@ -1,0 +1,9 @@
+OPTIONS=cursesgraphics
+OPTIONS=windowtype:curses
+OPTIONS=windowborders:3
+OPTIONS=popup_dialog
+OPTIONS=align_message:bottom
+OPTIONS=align_status:right
+OPTIONS=guicolor
+OPTIONS=boulder:0
+OPTIONS=autodig,!autopickup

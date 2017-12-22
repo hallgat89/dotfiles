@@ -1,0 +1,12 @@
+keep-articles-days 10
+
+# EOF
+# a simple newsbeuter color scheme.
+
+color listnormal white default
+color listfocus  black yellow
+color info       yellow black
+color background white default
+color article    white default
+
+auto-reload yes

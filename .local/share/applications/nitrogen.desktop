@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=nitrogen
+Name=nitrogen
+Categories=Utility;GTK;XFCE;Settings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
+Icon=nitrogen
+Comment=Browse and set desktop backgrounds
+Keywords=background;desktop;

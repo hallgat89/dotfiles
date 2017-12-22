@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=OBconf
+Comment=Openbox properties
+Exec=obconf
+Icon=obconf
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+NotShowIn=GNOME;KDE;Unity;

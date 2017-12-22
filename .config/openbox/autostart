@@ -1,0 +1,5 @@
+# Programs that will run after Openbox has started
+
+# WM specific autostart
+~/.scripts/session_autostart.sh openbox & 
+

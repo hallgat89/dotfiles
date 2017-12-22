@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=zonColor DarkNight
+Comment=DarkNight variant of zonColor
+
+[X-GNOME-Metatheme]
+GtkTheme=zoncolorDarkNight
+MetacityTheme=zoncolorDarkNight
+ShellTheme=zoncolorDarkNight
+IconTheme=zoncolorGrey
+CursorTheme=DMZ-Black
+BackgroundImage=/home/hallgat/Pictures/zoncolorDarkNight.png
+ButtonLayout=close:menu
+GtkColorScheme=@RESET

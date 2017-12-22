@@ -1,0 +1,134 @@
+################## Smartprompt by hallgat89 ####################
+
+#command timer start
+function timer_start {
+  timer=${timer:-$SECONDS}
+}
+
+#command timer end
+function timer_stop {
+  timer_show=$(($SECONDS - $timer))
+  unset timer
+}
+
+#main function
+function hallgat_prompt {
+
+  #return values (this must be first!)
+  rc=$?
+  if [ $rc -gt 0 ]; then
+    prev="$errc$rc"
+  else
+    prev=""
+  fi
+  
+  #git branch
+  local branch
+  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+    if [[ "$branch" == "HEAD" ]]; then
+      branch='detached*'
+    fi
+    git_branch="($branch) "
+  else
+    git_branch=""
+  fi
+  
+  
+  #command timer stop
+  timer_stop 
+  
+  #file counters
+  ltcoun=`ls -a | wc -l`
+  wd=`pwd`
+  if [ "$ltdir" != "$wd" ]
+  then
+    ltdir=`pwd`
+    info="$icol$ltcoun files "
+    export ltdir=$ltdir
+    export oltcoun=$ltcoun
+  else
+    if [ "$oltcoun" -ne "$ltcoun" ]
+    then
+      diff=$((ltcoun - oltcoun))
+      if [ "$diff" -lt 0 ]
+      then
+        diff=$((-1 * diff))
+        info="$icol$ltcoun files (-$diff) "
+      else
+        info="$icol$ltcoun files (+$diff) "
+      fi
+      export oltcoun=$ltcoun
+    else
+      info=""
+    fi
+  fi
+  
+  #execution time info
+  if [ "$timer_show" -gt "3" ]
+  then
+    if [ ${#string} -gt "0" ]
+    then
+      info=$info"; "
+    else
+      info="$icol"
+    fi
+    
+    h=$((timer_show/3600))
+    m=$((timer_show%3600/60))
+    s=$((timer_show%60))
+    [ $h -gt 0 ] && info=$info"$h"h" " 
+    [ $m -gt 0 ] && info=$info"$m"m" "
+    [ $s -gt 0 ] && info=$info"$s"s" "
+    
+  fi
+  
+  #time handling
+  ui=$(date +%H:%M)
+  if [ "$ui" != "$ri" ]; then
+    ido="$atc[$clockc$ui$atc]$defc"
+  else
+    ido="$atc@$defc"
+  fi 
+  export ri=$ui # export new time
+  
+  #building PS1, PS2
+  chroot="${debian_chroot:+($debian_chroot)}"
+  PS1="\${LCNT##*[\$((LCNT=1))-9]}$locc$chroot$ido:$locc\w\ $info$prev$gitcol$git_branch$shc>$defc " # set PS1, reset linenumber
+  PS2=" $lnnum\$((LCNT=LCNT+1))$shc>$defc " # set PS2 with linecount
+}
+
+trap 'timer_start' DEBUG #starts command timer
+PROMPT_COMMAND='hallgat_prompt' #main part
+
+#colors start with \[ and end with \] to avoid line breaking problems
+defc='\[\e[0m\]' #default color
+errc='\[\e[91m\]' #errno color
+lnnum='\[\e[33m\]' #line number color
+clockc='\[\e[33m\]' #clock color
+atc='\[\e[0m\]' # @ and [] color
+locc='\[\e[37m\]' #location color
+shc='\[\e[93m\]' # > color
+icol='\[\e[36m\]' # infocolor
+gitcol='\[\e[32m\]' # color of git branch
+
+# wal theme script, if doesn't work, remove the -t
+(~/.scripts/wal.sh -r -t &)
+#fortune | lolcat
+alias fuck="killall" #tell those processes to fuck off
+alias c="clear"
+alias todo="~/.scripts/todo.sh"
+alias did="~/.scripts/todo.sh -d"
+alias todol="~/.scripts/todo.sh -l"
+alias pipes="~/.scripts/pipes.sh"
+alias linuxcleaner="~/.scripts/linuxcleaner.sh"
+alias wificonnect="~/.scripts/wificonnect.sh"
+alias linuxupdater="sudo apt update && sudo apt upgrade"
+alias readhu="espeak -v hu -s 100 -f"
+alias readen="espeak -v en -s 100 -f"
+alias wallpaper="~/.scripts/updatewal.sh"
+alias mc="~/.scripts/mc-wrapper.sh"
+alias git_napalm="git fetch && git reset --hard && git clean -f -d && git pull --ff-only"
+alias gitstat="git status"
+umask 077 #no one views my files, no one!
+~/.scripts/randomascii.sh
+todo -c

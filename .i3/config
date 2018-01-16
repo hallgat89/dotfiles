@@ -13,9 +13,6 @@
 set $mod Mod4
 workspace_layout tabbed 
 
-#volumeicon-alsa
-exec volumeicon
-
 # solid background
 exec hsetroot -solid '#000000'
 
@@ -25,6 +22,9 @@ exec hsetroot -solid '#000000'
 #clean thumbnails
 exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
 
+# wallpaper-based theme
+exec sleep 1 && ~/.scripts/restore_wal.sh
+
 # Settings
 exec xfsettingsd
 exec xfce4-volumed
@@ -33,15 +33,15 @@ exec lxpolkit
 exec nm-applet
 exec xfce4-notifyd
 
+#volumeicon-alsa
+exec volumeicon
+
 # gnome keytool
 exec gnome-keyring-daemon --start --components=pkcs11
 exec gnome-keyring-daemon --start --components=secrets
 
 #own scripts
 exec ~/.scripts/dropboxcloser.sh
-
-# wallpaper-based theme
-exec sleep 2 && ~/.scripts/restore_wal.sh
 
 #change key input methods
 exec ibus-daemon
@@ -54,6 +54,9 @@ exec nitrogen --restore
 # Run a Composite manager
 exec compton
 #exec compton --config ~/.i3/i3_compton.conf
+
+#refresh i3wm (needed because the notification icons bgcolor)
+exec sleep 3 && i3-msg restart 
 
 #exec sleep 1 && rofi -show run || j4-dmenu-desktop || dmenu_run
 

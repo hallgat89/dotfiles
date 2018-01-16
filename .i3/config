@@ -277,8 +277,8 @@ bar {
         modifier Mod4
         font pango: Terminus 8
     colors {
-            background #000000
-            statusline #ffffff
+            background $bg
+            statusline $af
             focused_workspace  #000000 #000000 #00ffff
             active_workspace   #000000 #ffffff #000000
             inactive_workspace #000000 #000000 #888888

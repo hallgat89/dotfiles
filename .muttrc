@@ -84,7 +84,7 @@ bind index,pager <right>  sidebar-open
 # Pager Key Bindings ---------------------------------
 bind pager <up>  previous-line
 bind pager <down>  next-line
-bind pager gg top
+#bind pager gg top
 bind pager G  bottom
 bind pager R  group-reply
 

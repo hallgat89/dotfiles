@@ -102,6 +102,7 @@ for_window [title="(?i)sakura$"] floating enable
 for_window [class="(?i)Nitrogen"] floating enable
 for_window [title="^screenkey"] floating enable
 for_window [title="^recordMyDesktop"] floating enable
+for_window [class="tdc"] floating enable
 
 
 # font for window titles. ISO 10646 = Unicode
@@ -264,9 +265,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command    ~/.i3/conky.sh
-        position          top
+        position          bottom
         workspace_buttons yes
-        mode hide
+        mode dock
         hidden_state hide
         modifier $mod
         font pango: Terminus 8

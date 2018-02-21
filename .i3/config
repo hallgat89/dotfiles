@@ -95,6 +95,7 @@ no_focus   [class="Xfce4-notifyd"]
 for_window [class="(?i)qmmp"] border none
 for_window [class="(?i)tilda"] floating enable border none
 for_window [class="(?i)xboard"] floating enable
+for_window [class="(?i)xclock"] floating enable
 for_window [class="(?i)qmmp"] floating enable
 for_window [title="(?i)xterm"] floating enable
 for_window [title="(?i)sakura$"] floating enable
@@ -106,8 +107,8 @@ for_window [title="^recordMyDesktop"] floating enable
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-font pango:Terminus 11px
+font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 10
+font pango:Terminus 10px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -263,11 +264,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command    ~/.i3/conky.sh
-        position          bottom
+        position          top
         workspace_buttons yes
-        mode dock
+        mode hide
         hidden_state hide
-        modifier Mod4
+        modifier $mod
         font pango: Terminus 8
     colors {
             background $bg

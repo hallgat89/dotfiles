@@ -79,10 +79,6 @@ bindsym Control+F7 exec amixer -q sset Master 5%-
 bindsym Control+F8 exec amixer -q sset Master 5%+
 bindsym Control+F9 exec amixer -q -D pulse sset Master toggle
 
-# screen brightness
-bindsym Control+F5 exec ~/.scripts/screenlight.sh decrease
-bindsym Control+F6 exec ~/.scripts/screenlight.sh increase
-
 # toggle transparency
 bindsym $mod+x exec transset -a -t 0.7
 
@@ -90,15 +86,16 @@ bindsym $mod+x exec transset -a -t 0.7
 focus_follows_mouse no
 new_window normal 0 px
 new_float normal 0 px
+hide_edge_borders smart
 for_window [class="Xfce4-notifyd"] floating enable; border inherit; focus mode_toggle
 no_focus   [class="Xfce4-notifyd"]
 for_window [class="(?i)qmmp"] border none
 for_window [class="(?i)tilda"] floating enable border none
 for_window [class="(?i)xboard"] floating enable
-for_window [class="(?i)xclock"] floating enable
+for_window [class="(?i)xclock"] floating enable, border pixel 1
 for_window [class="(?i)qmmp"] floating enable
-for_window [title="(?i)xterm"] floating enable
-for_window [title="(?i)sakura$"] floating enable
+for_window [title="(?i)xterm"] floating enable, border pixel 1
+for_window [title="(?i)sakura$"] floating enable, border pixel 1
 for_window [class="(?i)Nitrogen"] floating enable
 for_window [title="^screenkey"] floating enable
 for_window [title="^recordMyDesktop"] floating enable
@@ -132,7 +129,6 @@ bindsym $mod+d exec j4-dmenu-desktop || dmenu_run
 #bindsym $mod+k focus down
 #bindsym $mod+l focus up
 #bindsym $mod+h focus right
-
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -227,11 +223,11 @@ set_from_resource $bg i3wm.color0 #f0f0f0
 set_from_resource $af i3wm.color7 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $af  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.focused          $bg     $bg     $af  $bg       $af
+client.focused_inactive $bg     $bg     $fg  $bg       $af
+client.unfocused        $bg     $bg     $fg  $bg       $af
+client.urgent           $bg     $bg     $fg  $bg       $af
+client.placeholder      $bg     $bg     $fg  $bg       $af
 
 client.background       $bg
 
@@ -267,10 +263,10 @@ bar {
         status_command    ~/.i3/conky.sh
         position          bottom
         workspace_buttons yes
-        mode dock
+        mode hide
         hidden_state hide
         modifier $mod
-        font pango: Terminus 8
+        font pango: Terminus 10
     colors {
             background $bg
             statusline $af

@@ -6,15 +6,15 @@ BASIC='plymouth-themes lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
 SETTINGS='xfce4-notifyd xfce4-power-manager xfce4-screenshooter xfce4-settings xfce4-volumed lxpolkit lubuntu-restricted-extras'
 
-APPS='rofi feh install geany astyle pcmanfm xfce4-terminal ristretto redshift xzoom seahorse gnome-keyring libsecret-tools volumeicon-alsa xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm  compton compton-conf'
+APPS='rofi feh install geany astyle pcmanfm sakura ristretto redshift xzoom seahorse gnome-keyring libsecret-tools volumeicon-alsa xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm  compton compton-conf'
 
 I3WM='i3 i3lock i3blocks j4-dmenu-desktop dmenu'
 
-OPENBOX='openbox obmenu obconf tint2 gsimplecal nitrogen plank oneko'
+OPENBOX='openbox obmenu obconf tint2 gsimplecal nitrogen'
 
 JWM='jwm'
 
-TERMINAL='mc moc htop newsbeuter screenfetch ssh mutt mutt-patched urlview urlscan w3m curl wget gtkorphan lolcat dvtm'
+TERMINAL='mc moc htop newsbeuter ssh mutt urlview urlscan w3m curl wget gtkorphan lolcat dvtm'
 
 JAPANESE='ibus ibus-anthy fonts-vlgothic fonts-takao ttf-kochi-mincho fonts-dejima-mincho fonts-horai-umefont'
 

@@ -61,7 +61,7 @@ bindsym $mod+Tab exec rofi -show window
 
 bindsym $mod+t exec x-terminal-emulator
 
-bindsym $mod+p exec pcmanfm
+bindsym $mod+p exec exo-open --launch FileManager || x-terminal-emulator -e mc
 bindsym $mod+b exec exo-open --launch WebBrowser || x-www-browser
 bindsym $mod+m exec exo-open --launch MailReader || thunderbird || x-terminal-emulator -e mutt
 bindsym $mod+l exec ~/.scripts/jap3lock.sh ||  i3lock -c 000000

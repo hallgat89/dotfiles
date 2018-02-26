@@ -4,7 +4,7 @@ set $mod Mod4
 workspace_layout tabbed 
 
 # solid background
-exec hsetroot -solid '#000000'
+#exec hsetroot -solid '#000000'
 
 # remove recently used files from pcmanfm
 #echo "" > ~/.local/share/recently-used.xbel &

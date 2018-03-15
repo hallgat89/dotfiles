@@ -1,0 +1,10 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+
+"xte 'key Page_Up'"
+b:9  
+
+"xte 'key Page_Down'"
+b:8  

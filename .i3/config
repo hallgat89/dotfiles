@@ -9,10 +9,10 @@ workspace_layout tabbed
 # remove recently used files from pcmanfm
 #echo "" > ~/.local/share/recently-used.xbel &
 
-#clean thumbnails
+# Clean thumbnails
 exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
 
-# wallpaper-based theme
+# Wallpaper-based theme
 exec sleep 1 && ~/.scripts/restore_wal.sh
 
 # Settings
@@ -23,14 +23,17 @@ exec lxpolkit
 exec nm-applet
 exec xfce4-notifyd
 
-#volumeicon-alsa
+# Volumeicon-alsa
 exec volumeicon
 
-# gnome keytool
+# Custom keys
+exec xbindkeys
+
+# Gnome keytool
 exec gnome-keyring-daemon --start --components=pkcs11
 exec gnome-keyring-daemon --start --components=secrets
 
-#own scripts
+# Own scripts
 exec ~/.scripts/dropboxcloser.sh
 
 #change key input methods
@@ -42,7 +45,7 @@ exec setxkbmap hu
 exec nitrogen --restore
       
 # Run a Composite manager
-exec compton
+#exec compton
 #exec compton --config ~/.i3/i3_compton.conf
 
 #refresh i3wm (needed because the notification icons bgcolor)
@@ -218,9 +221,9 @@ bindsym $mod+Shift+E exit
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources for some reason.
-set_from_resource $fg i3wm.color8 #f0f0f0
-set_from_resource $bg i3wm.color0 #f0f0f0
-set_from_resource $af i3wm.color7 #f0f0f0
+set_from_resource $fg i3wm.color8 #ffffff
+set_from_resource $bg i3wm.color0 #000000
+set_from_resource $af i3wm.color7 #ffffff
 
 # class                 border  backgr. text indicator child_border
 client.focused          $bg     $bg     $af  $bg       $af

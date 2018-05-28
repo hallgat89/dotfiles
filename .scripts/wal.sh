@@ -88,8 +88,27 @@ get_colors() {
             ((index++))
             out "colors: Imagemagick couldn't generate a $color_count color palette, trying a larger palette size ($((color_count + index)))."
 
-            # Quit the loop if we're taking too long.
-            ((index == 10)) && break
+            if [[ "$index" -eq "10" ]]; then
+                # Use a default colorscheme if we're taking too long.
+                colors[0]='#000000'
+                colors[1]='#dc322f'
+                colors[2]='#859900'
+                colors[3]='#b58900'
+                colors[4]='#268bd2'
+                colors[5]='#d33682'
+                colors[6]='#2aa198'
+                colors[7]='#eee8d5'
+                colors[8]='#002b36'
+                colors[9]='#cb4b16'
+                colors[10]='#586e75'
+                colors[11]='#657b83'
+                colors[12]='#839496'
+                colors[13]='#6c71c4'
+                colors[14]='#93a1a1'
+                colors[15]='#fdf6e3'
+                out "colors: Imagemagick couldn't generate a $color_count color palette, using a default scheme"
+                break
+            fi
         done
 
         # Cache the scheme.

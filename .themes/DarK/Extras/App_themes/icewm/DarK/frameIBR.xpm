@@ -1,1 +1,6 @@
-frameABR.xpm
+/* XPM */
+static char * frameAB_xpm[] = {
+"5 1 2 1",
+" 	c None",
+".	c #000000",
+"....."};

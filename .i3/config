@@ -24,7 +24,7 @@ exec nm-applet
 exec xfce4-notifyd
 
 # Volumeicon-alsa
-exec volumeicon
+exec pnmixer
 
 # Custom keys
 exec xbindkeys
@@ -42,10 +42,10 @@ exec numlockx on
 exec setxkbmap hu
 
 # Set wallpaper
-exec nitrogen --restore
+exec sleep 1 && nitrogen --restore
       
 # Run a Composite manager
-#exec compton
+exec compton
 #exec compton --config ~/.i3/i3_compton.conf
 
 #refresh i3wm (needed because the notification icons bgcolor)

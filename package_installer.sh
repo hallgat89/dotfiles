@@ -6,11 +6,11 @@ BASIC='plymouth-themes lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
 SETTINGS='xfce4-notifyd xfce4-power-manager xfce4-screenshooter xfce4-settings xfce4-volumed lxpolkit lubuntu-restricted-extras'
 
-APPS='rofi feh install geany astyle pcmanfm sakura nomacs redshift xzoom seahorse gnome-keyring libsecret-tools pnmixer xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm  compton compton-conf'
+APPS='rofi feh install geany astyle pcmanfm sakura nomacs redshift xzoom seahorse gnome-keyring libsecret-tools pnmixer xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm nitrogen compton compton-conf'
 
 I3WM='i3 i3lock i3blocks j4-dmenu-desktop dmenu'
 
-OPENBOX='openbox obmenu obconf tint2 gsimplecal nitrogen'
+OPENBOX='openbox obmenu obconf tint2 gsimplecal'
 
 JWM='jwm'
 
@@ -20,8 +20,6 @@ JAPANESE='ibus ibus-anthy fonts-vlgothic fonts-takao ttf-kochi-mincho fonts-deji
 
 DROPBOX='nautilus-dropbox'
 
-JAVA='oracle-java8-installer oracle-java8-set-default'
-
 FLASH='flashplugin-installer'
 
 GIT='git'
@@ -30,13 +28,8 @@ LIBREOFFICE='libreoffice'
 
 STEAM='steam'
 
-SPOTIFY='spotify'
-
-THEMES='faenza-icon-theme numix-icon-theme numix-gtk-theme adapta-gtk-theme paper-cursor-theme square-icons'
-
 SECURITY='dnscrypt-proxy ufw clamtk'
 
-HOTCORNER='brightside skippy-xd'
 
 cmd=(dialog  --backtitle "Software installation" --checklist "Software groups:" 18 40 12)
 options=(1 "Base system packages" on \
@@ -48,15 +41,11 @@ options=(1 "Base system packages" on \
 7 "Terminal utils" on \
 8 "Japanese support" on \
 9 "Dropbox" on \
-10 "Java" on \
-11 "Flash" off \
-12 "Git" off \
-13 "LibreOffice" off \
-14 "Steam" off \
-15 "Spotify" off \
-16 "Extra themes" off \
-17 "Extra security" on \
-18 "Hot corners" off)
+10 "Flash" off \
+11 "Git" off \
+12 "LibreOffice" off \
+13 "Steam" off \
+14 "Extra security" on \
 
 response=$?
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -66,30 +55,6 @@ if [ "$response" -eq "255" ]
 then
     exit 255
 fi
-
-# Add repositories
-for c in $choices
-do
-    case $c in 
-    10)
-        sudo add-apt-repository ppa:webupd8team/java
-    ;;
-    13)
-        sudo add-apt-repository ppa:libreoffice/ppa
-    ;;
-    15)
-        sudo add-apt-repository "deb http://repository.spotify.com stable non-free"
-        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
-    ;;
-    16)
-        sudo apt-add-repository ppa:tista/adapta #adapta
-        sudo add-apt-repository ppa:numix/ppa  #numix
-        sudo add-apt-repository ppa:snwh/pulp #paper
-        sudo add-apt-repository ppa:noobslab/icons2 #square-icons
-    ;;
-    *)
-    esac
-done
     
 #update
 sudo apt update
@@ -127,31 +92,19 @@ do
         sudo apt install $DROPBOX
     ;;
     10)
-        sudo apt install $JAVA
-    ;;
-    11)
         sudo apt install $FLASH
     ;;
-    12)
+    11)
         sudo apt install $GIT
     ;;
-    13)
+    12)
         sudo apt install $LIBREOFFICE
     ;;
-    14)
+    13)
         sudo apt install $STEAM
     ;;
-    15)
-        sudo apt install $SPOTIFY
-    ;;
-    16)
-        sudo apt install $THEMES
-    ;;
-    17)
+    14)
         sudo apt install $SECURITY
-    ;;
-    18)
-        sudo apt install $HOTCORNER
     ;;
     *)
     esac 

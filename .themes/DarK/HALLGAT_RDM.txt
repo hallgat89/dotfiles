@@ -1,0 +1,1 @@
+In case you update this theme, delete gtk2 / iconoverridesr.c file to get back gimp icons.

@@ -6,7 +6,7 @@ BASIC='plymouth-themes lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
 SETTINGS='xfce4-notifyd xfce4-power-manager xfce4-screenshooter xfce4-settings xfce4-volumed lxpolkit lubuntu-restricted-extras'
 
-APPS='rofi feh install geany astyle pcmanfm sakura nomacs redshift xzoom seahorse gnome-keyring libsecret-tools pnmixer xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm nitrogen compton compton-conf'
+APPS='rofi feh install geany astyle pcmanfm sakura nomacs redshift exo-preferred-applications xzoom seahorse gnome-keyring libsecret-tools pnmixer xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx nm-applet mcomix qpdfview qmmp qmmp-plugin-projectm nitrogen compton compton-conf'
 
 I3WM='i3 i3lock i3blocks j4-dmenu-desktop dmenu'
 

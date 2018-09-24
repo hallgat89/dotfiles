@@ -6,6 +6,12 @@ chmod 750 "$HOME"
 # remove recently used files from pcmanfm
 echo "" > ~/.local/share/recently-used.xbel
 
+# remove Thumb.db files
+#find ~ -name 'Thumbs.db' -type f -delete
+
+# remove DS_Store files
+#find ~ -name '.DS_Store' -type f -delete
+
 #clean thumbnails
 rm -rf ~/.thumbnails
 

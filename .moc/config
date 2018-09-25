@@ -44,3 +44,4 @@ ExecCommand8 = "mv %f .local/share/Trash/files/"
 
 # Fav songs
 ExecCommand1 = "/home/hallgat/.moc/favsong.sh"
+ExecCommand2 = "x-terminal-emulator -e '/home/hallgat/.moc/moc-lyrics.sh' &"

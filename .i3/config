@@ -74,6 +74,9 @@ bindsym $mod+y exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & m
 bindsym $mod+n exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & newsbeuter'"
 bindsym $mod+u exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & sudo apt update && sudo apt upgrade'"
 
+# open a non-recolored terminal with dvtm running
+bindsym $mod+c exec x-terminal-emulator -e dvtm
+
 #alt+F4
 bindsym Mod1+F4 kill
 

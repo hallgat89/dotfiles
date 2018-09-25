@@ -1,0 +1,1 @@
+bash -c "astyle -C -Y -j -J -p -xC120 -xL -xp -k1 -W1 --style=google"

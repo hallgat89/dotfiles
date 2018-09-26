@@ -1,7 +1,7 @@
 syntax on
 set cursorline
 set number
-colorscheme inkpot
+colorscheme gruvbox
 
 nnoremap <F8> :tabn<CR>
 nnoremap <F7> :tabp<CR>

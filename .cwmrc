@@ -27,8 +27,8 @@ ignore dock
 ignore menu
 
 # Define special commands
-command term            urxvtc
-command lock            xautolock -locknow
+command term            sakura
+command lock            'xscreensaver-command -activate'
 
 # Border colors
 #color activeborder      '#f3f3f3'               # Set the color of the active border
@@ -73,8 +73,8 @@ bind CMS-r              unmap
 bind CMS-q              unmap
 
 # New default keyboard bindings
-bind CM-Return           terminal               # Spawn a new terminal
-bind CM-l               lock                    # Lock the screen
+bind 4-Return           terminal               # Spawn a new terminal
+bind 4-l               lock                    # Lock the screen
 #bind M-space            search                 # Launch window search menu
 #bind M-Tab              cycleingroup           # Forward cycle through windows in current group
 #bind MS-Tab             rcycleingroup          # Reverse cycle through windows in current group

@@ -51,61 +51,48 @@ response=$?
 choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 
 
-if [ "$response" -eq "255" ]
+if [ "$response" -eq "255" ] 
 then
     exit 255
 fi
-    
+
 #update
 sudo apt update
 
-echo $choices
-    
+echo "$choices"
+
 for i in $choices
 do
-    case $i in
-    1)
-        sudo apt install $BASIC
-    ;;
-    2)
-        sudo apt install $SETTINGS
-    ;;
-    3)
-        sudo apt install $APPS
-    ;;
-    4)
-        sudo apt install $I3WM
-    ;;
-    5)
-        sudo apt install $OPENBOX
-    ;;
-    6)
-        sudo apt install $JWM
-    ;;
-    7)
-        sudo apt install $TERMINAL
-    ;;
-    8)
-        sudo apt install $JAPANESE
-    ;;
-    9)
-        sudo apt install $DROPBOX
-    ;;
-    10)
-        sudo apt install $FLASH
-    ;;
-    11)
-        sudo apt install $GIT
-    ;;
-    12)
-        sudo apt install $LIBREOFFICE
-    ;;
-    13)
-        sudo apt install $STEAM
-    ;;
-    14)
-        sudo apt install $SECURITY
-    ;;
-    *)
-    esac 
+    case "$i" in
+        1)
+            sudo apt install "$BASIC" ;;
+        2)
+            sudo apt install "$SETTINGS" ;;
+        3)
+            sudo apt install "$APPS" ;;
+        4)
+            sudo apt install "$I3WM" ;;
+        5)
+            sudo apt install "$OPENBOX" ;;
+        6)
+            sudo apt install "$JWM" ;;
+        7)
+            sudo apt install "$TERMINAL" ;;
+        8)
+            sudo apt install "$JAPANESE" ;;
+        9)
+            sudo apt install "$DROPBOX" ;;
+        10)
+            sudo apt install "$FLASH" ;;
+        11)
+            sudo apt install "$GIT" ;;
+        12)
+            sudo apt install "$LIBREOFFICE" ;;
+        13)
+            sudo apt install "$STEAM" ;;
+        14)
+            sudo apt install "$SECURITY" ;;
+        *)
+        ;;
+    esac
 done

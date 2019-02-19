@@ -42,7 +42,7 @@ exec numlockx on
 exec setxkbmap hu
 
 # Set wallpaper
-exec sleep 1 && nitrogen --restore
+exec sleep 2 && nitrogen --restore
       
 # Run a Composite manager
 exec compton

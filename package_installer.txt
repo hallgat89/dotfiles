@@ -1,0 +1,7 @@
+plymouth-themes lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings alsa-base grub-pc xfce4-notifyd xfce4-power-manager xfce4-screenshooter xfce4-settings xfce4-volumed lxpolkit lubuntu-restricted-extras nautilus-dropbox rofi feh geany astyle pcmanfm sakura nomacs redshift exo-preferred-applications xzoom seahorse gnome-keyring libsecret-tools pnmixer xfonts-terminus usb-creator-gtk parcellite psensor lm-sensors gimp language-selector-common vlc numlockx network-manager-gnome mcomix qpdfview nitrogen compton compton-conf i3 i3lock i3blocks j4-dmenu-desktop dmenu gtkorphan imagemagick firefox thunderbird
+
+OPENBOX='openbox obmenu obconf tint2 gsimplecal'
+
+TERMINAL='mc moc htop newsbeuter ssh mutt urlview urlscan w3m curl wget dvtm'
+
+JAPANESE='ibus ibus-anthy fonts-vlgothic fonts-takao ttf-kochi-mincho fonts-dejima-mincho fonts-horai-umefont'

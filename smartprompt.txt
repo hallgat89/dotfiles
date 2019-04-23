@@ -114,10 +114,12 @@ shc='\[\e[93m\]' # > color
 icol='\[\e[36m\]' # infocolor
 gitcol='\[\e[32m\]' # color of git branch
 
+#wal colortheme
+#(~/.scripts/wal.sh -r -t &)
+(cat ~/.cache/wal/sequences &)
 
-# wal theme script, if doesn't work, remove the -t
-(~/.scripts/wal.sh -r -t &)
-#fortune | lolcat
+export PATH="${PATH}:${HOME}/.local/bin/"
+
 alias fuck="killall" #tell those processes to fuck off
 alias c="clear"
 alias todo="~/.scripts/todo.sh"
@@ -130,10 +132,10 @@ alias linuxupdater="sudo apt update && sudo apt upgrade"
 alias termtime='while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-11));echo -e "\e[31m`date +%r`\e[39m";tput rc;done &'
 alias readhu="espeak -v hu -s 100 -f"
 alias readen="espeak -v en -s 100 -f"
-alias wallpaper="~/.scripts/updatewal.sh"
-alias mc="~/.scripts/mc-wrapper.sh"
+alias wallpaper="~/.scripts/updatepywal.sh"
 alias git_napalm="git fetch && git reset --hard && git clean -f -d && git pull --ff-only"
-alias gitstat="git status"
+alias mc="~/.scripts/mc-wrapper.sh"
+TERMINAL="sakura" #for i3wm
 umask 077 #no one views my files, no one!
 ~/.scripts/randomascii.sh
 todo -c

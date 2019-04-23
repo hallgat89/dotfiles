@@ -13,7 +13,8 @@ workspace_layout tabbed
 exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
 
 # Wallpaper-based theme
-exec sleep 1 && ~/.scripts/restore_wal.sh
+exec --no-startup-id .local/bin/wal -R
+# exec sleep 1 && ~/.scripts/restore_wal.sh
 
 # Settings
 exec xfsettingsd
@@ -64,15 +65,15 @@ bindsym $mod+Tab exec rofi -show window
 
 bindsym $mod+t exec x-terminal-emulator
 
-bindsym $mod+p exec pcmanfm || nautilus || x-terminal-emulator -e mc
-bindsym $mod+b exec firefox || qutebrowser
-bindsym $mod+m exec thunderbird || x-terminal-emulator -e mutt
+bindsym $mod+p exec exo-open --launch FileManager || x-terminal-emulator -e mc
+bindsym $mod+b exec exo-open --launch WebBrowser || x-www-browser
+bindsym $mod+m exec exo-open --launch MailReader || thunderbird || x-terminal-emulator -e mutt
 bindsym $mod+l exec ~/.scripts/jap3lock.sh ||  i3lock -c 000000
 bindsym $mod+g exec geany
-bindsym Shift+Control+Escape exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & htop'"
-bindsym $mod+y exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & mocp'"
-bindsym $mod+n exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & newsbeuter'"
-bindsym $mod+u exec x-terminal-emulator -e "bash -c '~/.scripts/wal.sh -r -t & sudo apt update && sudo apt upgrade'"
+bindsym Shift+Control+Escape exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & htop'"
+bindsym $mod+y exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & mocp'"
+bindsym $mod+n exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & newsbeuter'"
+bindsym $mod+u exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & sudo apt update && sudo apt upgrade'"
 
 # open a non-recolored terminal with dvtm running
 bindsym $mod+c exec x-terminal-emulator -e dvtm

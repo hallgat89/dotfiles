@@ -1,0 +1,29 @@
+
+# Clean thumbnails
+exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
+
+# Wallpaper-based theme
+.local/bin/wal -R
+# exec sleep 1 && ~/.scripts/restore_wal.sh
+
+# Settings
+xfsettingsd &
+xfce4-volumed &
+xfce4-power-manager &
+lxpolkit &
+nm-applet &
+xfce4-notifyd &
+
+tint2 &
+
+# Volumeicon-alsa
+pnmixer &
+
+# Custom keys
+xbindkeys &
+
+# Gnome keytool
+gnome-keyring-daemon --start --components=pkcs11 &
+gnome-keyring-daemon --start --components=secrets &
+
+nitrogen --restore &

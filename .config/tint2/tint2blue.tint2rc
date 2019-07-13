@@ -1,0 +1,129 @@
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------   
+
+# active app border
+rounded = 2
+border_width = 1
+background_color = #055078 90
+border_color = #011e2e 50
+
+# active panel stuff
+rounded = 2
+border_width = 1
+background_color = #012538 90
+border_color = #014265 50
+
+# panel border
+rounded = 0
+border_width = 1
+background_color = #003f60 100
+border_color = #08243a 70
+
+# non active panel stuff
+rounded = 2
+border_width = 1
+background_color = #003f60 90
+border_color = #003552 50
+
+# tray + clock
+rounded = 0
+border_width = 0
+background_color = #003f60 90
+border_color = #003552 50
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+panel_layer = top
+panel_position = bottom center horizontal
+panel_size = 100% 25
+panel_margin = 0 0
+panel_padding = 2 2 5
+font_shadow = 0
+panel_background_id = 3
+wm_menu = 1
+panel_dock = 0
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = multi_desktop
+taskbar_padding = 0 0 0
+taskbar_background_id = 4
+taskbar_active_background_id = 2
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+urgent_nb_of_blink = 10
+task_icon = 1
+task_text = 0
+task_width = 47
+task_centered = 1
+task_padding = 1 1
+task_font = sans 7
+task_font_color = #FFFFFF 70
+task_active_font_color = #FFFFFF 85
+task_background_id = 0
+task_active_background_id = 1
+#task_icon_asb = 20 20 50
+#task_active_icon_asb = 50 50 100
+
+#---------------------------------------------
+# TOOLTIPS
+#---------------------------------------------
+tooltip = 1
+tooltip_padding = 0 0
+tooltip_show_timeout = 0
+tooltip_hide_timeout = 0
+tooltip_background_id = 2
+tooltip_font = Sans 10
+tooltip_font_color = #FFFFFF 100
+
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray = 1
+systray_padding = 0 0 0
+systray_background_id = 5
+systray_sort = ascending
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = | %Y %b %d | %H:%M
+time1_font = sans 8
+#time2_format = %d %b
+#time2_font = sans 8
+clock_font_color = #FFFFFF 100
+clock_padding = 2 0
+clock_background_id = 5
+clock_tooltip = %A %d %B %Y
+clock_lclick_command = x-terminal-emulator -e alsamixer
+clock_rclick_command = x-terminal-emulator -e htop
+
+#---------------------------------------------
+# BATTERY
+#---------------------------------------------
+battery = 0
+battery_low_status = 7
+battery_low_cmd = notify-send "battery low"
+bat1_font = sans 8
+bat2_font = sans 8
+battery_font_color = #FFFFFF 100
+battery_padding = 2 2
+battery_background_id = 4
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = maximize_restore
+mouse_scroll_down = next_task

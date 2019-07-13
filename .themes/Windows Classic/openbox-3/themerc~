@@ -1,0 +1,99 @@
+
+#menu
+menu.*.font:shadow=n
+
+menu.items.bg: raised gradient vertical
+menu.items.bg.color:#d4d0c8
+menu.items.bg.colorTo: #e5e3dd
+menu.items.bg.shadow: 46
+menu.items.bg.highlight: 20
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #0a246a
+menu.items.active.text.color: #eeeeee
+menu.items.justify: left
+
+menu.items.text.color: #151515
+menu.items.active.text.color: #ffffff
+menu.items.disabled.text.color: #aca799
+menu.items.active.disabled.text.color: #d0d0d0
+
+menu.title.bg: raised solid
+menu.title.bg.color: #eae8e3
+menu.title.bg.shadow: 46
+menu.title.bg.highlight: 20
+menu.title.text.color: #151515
+menu.title.text.justify: center
+
+menu.border.width: 0
+menu.separator.color: #aca799
+menu.overlap: 1
+
+
+#Buttons
+window.*.button.*.bg:  gradient diagonal raised
+window.*.button.*.bg.color: #CCCCCC
+window.*.button.*.bg.colorTo: #888888
+window.*.button.*.bg.shadow: 200
+window.*.button.*.bg.highlight: 200
+
+window.active.button.*.pressed.bg: sunken gradient diagonal
+window.active.button.*.pressed.bg.color: #888888
+window.active.button.*.pressed.bg.colorTo: #CCCCCC
+window.active.button.*.*.bg.shadow: 200
+window.active.button.*.*.bg.highlight: 200
+window.active.button.*.hover.bg:  raised solid
+window.active.button.*.hover.bg.color: #BBBBBB
+
+window.inactive.button.*.image.color: #222222
+
+#Title
+window.*.title.bg: Flat Gradient Horizontal
+window.active.title.bg.color: #0F195E
+window.active.title.bg.colorTo: #94b8dE
+window.inactive.title.bg.color: #555555
+window.inactive.title.bg.colorTo: #BBBBBB
+
+#Lable
+window.*.label.bg: parentrelative
+window.label.text.justify: left
+window.active.label.text.color: #FFFFFF
+window.inactive.label.text.color: #aca799
+window.inactive.label.text.font:shadow=n
+*.font: shadow=y:shadowtint=50:shadowoffset=1
+
+#Border
+border.width: 3
+padding.width: 1
+padding.height: 2
+window.handle.width: 0
+window.client.padding.width: 1
+window.client.padding.height: 1
+window.*.border.color: #CCCCCC
+window.*.client.color: #AAAAAA
+
+
+#Dialog
+osd.border.color: #e0ded8
+osd.border.width: 10
+
+osd.bg: raised solid
+osd.bg.color: #eae8e3
+osd.bg.shadow: 46
+osd.bg.highlight: 20
+
+osd.label.bg: parentrelative
+osd.label.text.color: #151515
+
+osd.hilight.bg: sunken gradient vertical
+osd.hilight.bg.color: #d0cdc3
+osd.hilight.bg.colorTo: #c4c0b6
+osd.hilight.bg.shadow: 46
+osd.hilight.bg.highlight: 20
+
+osd.unhilight.bg: raised gradient vertical
+osd.unhilight.bg.color: #f5f4f3
+osd.unhilight.bg.colorTo: #e5e3dd
+osd.unhilight.bg.shadow: 46
+osd.unhilight.bg.highlight: 20
+

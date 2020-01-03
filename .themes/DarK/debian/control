@@ -1,0 +1,35 @@
+Source: dark-theme
+Section: xfce
+Priority: optional
+Maintainer: SSF <ssf@NeverEver.com>
+Build-Depends: libfile-fcntllock-perl, debhelper (>= 7) 
+Standards-Version: 3.9.6
+
+Package: dark-theme
+Architecture: all
+Conflicts: libgtk-3-0 (<<3.20)
+Replaces: 0nyx-theme, dark-icon-theme
+Pre-Depends: sed(>=4.4), whiptail
+Provides: mate-themes, xfwm4-themes, gnome-accessibility-themes
+Depends: findutils(>=4.6), coreutils(>=8.26), dmz-cursor-theme, marco | xfwm4 | muffin | metacity | openbox
+Recommends: yad | kdialog, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine, gtk2-engines:i386, gtk2-engines-pixbuf:i386, gtk2-engines-murrine:i386, libgtk3-nocsd0:i386, libgtk1.2, libgtk1.2:i386, libgtk-3-0 (>=3.20)
+Suggests: chromium (>=63) | google-chrome-stable (>=53), slim | lightdm-gtk-greeter-settings, plank, onboard | maliit-keyboard, tint2, qt5ct, audacious | qmmp, gtk-theme-switch | gtk-chtheme | mate-control-center | xfce4-settings, obconf, mate-window-applets, mate-applet-appmenu, mate-window-buttons-applet | xfce4-windowck-plugin, mate-dock-applet, mate-indicator-applet, thunar | caja, libcanberra-gtk3-module, libcanberra-gtk-module
+Description: Minimalism at its finest.
+ Currently Includes:
+ * GTK 1 colorscheme
+ * GTK 2 theme
+ * GTK 3 theme
+ * Xfwm theme
+ * Openbox theme
+ * Metacity/Marco/Muffin theme
+ * OnBoard theme
+ * Maliit theme
+ * Plank theme
+ * Tint2 base theme
+ * SLiM theme
+ * GtkSourceView colorscheme
+ * Xfce-terminal colorscheme
+ * Xfce Notify theme
+ * Qt5ct colorscheme
+ * HiDPI themes
+ * Wallpapers

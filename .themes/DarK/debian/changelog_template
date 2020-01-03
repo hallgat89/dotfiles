@@ -1,0 +1,187 @@
+dark-theme (6:2.__COMMIT__) UNRELEASED; urgency=medium
+
+  * new upstream release
+  
+ -- ssf <ssf@NeverEver.com>  Fri, 01 Jun 2018 12:51:08 +0000
+
+dark-theme (6:1.7) UNRELEASED; urgency=medium
+
+  * complete new theme package
+  * better first setup script
+  
+ -- ssf <ssf@NeverEver.com>  Sun, 15 Apr 2018 09:55:50 +0000
+
+dark-theme (6:1.5) UNRELEASED; urgency=medium
+
+  * some more fixes
+  * moved to gitlab
+  * provide packed files
+  
+ -- ssf <ssf@NeverEver.com>  Wed, 04 Apr 2018 02:38:24 +0000
+
+dark-theme (6:1.21) UNRELEASED; urgency=medium
+
+  * re-added the winamp theme
+  * re-added the openbox theme
+  * fixed a few bugs
+  
+ -- ssf <ssf@NeverEver.com>  Wed, 21 Mar 2018 03:26:02 -0500
+
+dark-theme (6:1.20) UNRELEASED; urgency=medium
+
+  * there is now a gtk2 hidpi theme 
+  * HighContrast theme has been re-added
+
+ -- ssf <ssf@NeverEver.com>  Thu, 22 Feb 2018 21:07:40 +0000
+
+dark-theme (6:1.18) UNRELEASED; urgency=medium
+
+  * the color script will now use a backup
+  * that makes now every color possible 
+  * 0nyx xfwm theme has been removed
+  * default color is now the same as 0nyX 
+
+ -- ssf <ssf@NeverEver.com>  Sat, 10 Feb 2018 12:36:08 +0000
+
+dark-theme (6:1.17) UNRELEASED; urgency=medium
+
+  * reworked some WM themes 
+  * reworked the gtk3 popovers
+  * added old 0nyX SLiM themes
+  * some gtk3 fixes
+  * more rgb colors 
+
+ -- ssf <ssf@NeverEver.com>  Sun, 04 Feb 2018 11:35:55 +0000
+
+dark-theme (6:1.16) UNRELEASED; urgency=medium
+
+  * some usability improvements
+  * all WM themes have now a doubled version
+  * DEB: make some stuff optional by adding questions 
+  * reworked the cupertino theme
+  * slight unity.csd fixes 
+
+ -- ssf <ssf@NeverEver.com>  Sat, 03 Feb 2018 11:35:55 +0000
+
+dark-theme (6:1.15) UNRELEASED; urgency=medium
+
+  * reworked the gtk2 tabs
+  * some usability improvements
+  * add the old 0nyx wm theme
+  * add some older background tiles
+  * windows 10 alike theme
+  * adds many icon overrides for pidgin
+  * the most stuff should now work under gnome  
+
+ -- ssf <ssf@NeverEver.com>  Sun, 28 Jan 2018 05:05:50 +0000
+
+dark-theme (6:1.14) UNRELEASED; urgency=medium
+
+  * scrollbars have now stepper on the bottom
+  * notebook steppers are both on the right
+  * fixed the gtk3 scrollbar buttons 
+  * updated gimp iconoverrides  
+
+ -- ssf <ssf@NeverEver.com>  Fri, 26 Jan 2018 20:03:02 +0000
+
+dark-theme (6:1.13) UNRELEASED; urgency=medium
+
+  * murrine for the sliders, because it supports highlights
+  * some tiny fixes and workarounds
+  * updated gimp icon overrides 
+
+ -- ssf <ssf@NeverEver.com>  Fri, 26 Jan 2018 19:03:02 +0000
+
+dark-theme (6:1.12) UNRELEASED; urgency=medium
+
+  * better cinnamon support
+  * some nemo fixes 
+  * some tiny xfce4-settings-manager fixes 
+  * tiny gtk3 tabbutton fixes 
+
+ -- ssf <ssf@NeverEver.com>  Sat, 20 Jan 2018 13:06:31 +0000
+
+dark-theme (5:4.12.010) UNRELEASED; urgency=medium
+
+  * darker selected menuitem
+  * selected notebooks have now a top border 
+  * gtk2 tooltipfix
+  * ported more xfwm themes to marco 
+  * geany gtk3 fixes 
+  * reguar icons are broken with gtk 3.26-->as requested! 
+  * some MATE fixes
+  * better gtk2 handleboxes  
+
+ -- ssf <ssf@NeverEver.com>  Thu, 11 Jan 2018 10:56:24 -0100
+
+dark-theme (5:4.12.009) UNRELEASED; urgency=medium
+
+  * some fixes
+  * better support for debian based distros
+  * more xfwm themes 
+
+ -- ssf <ssf@NeverEver.com>  Sun, 07 Jan 2018 10:43:17 -0100
+
+dark-theme (5:4.12.008) UNRELEASED; urgency=medium
+
+  * added marco/metacity theme
+  * added MATE metatheme file
+  * fix some tiny issues
+  * fixed the gtk3 scrollbar buttons
+
+ -- ssf <ssf@NeverEver.com>  Sat, 30 Dec 2017 03:00:40 -0600
+
+dark-theme (5:4.12.007) UNRELEASED; urgency=medium
+
+  * many fixes
+  * better firefox >=57 theme
+  * its now possible to change the selected fgcolor ->every color is possible
+  * however this means some heavy changes so i renamed the style - again :P
+  * the WM theme includes now a version for lefties
+  * all xfwm buttons done
+  * nothing is on the xfwm theme is forced anymore 
+  * fix the xfce backgrounds path   
+
+ -- ssf <ssf@NeverEver.com>  Fri, 29 Dec 2017 13:02:59 +0000
+
+dark-theme (5:4.12.006) UNRELEASED; urgency=medium
+
+  * complete redesign
+  * some fixes
+
+ -- ssf <ssf@NeverEver.com>  Sun, 24 Dec 2017 13:05:03 +0100
+
+dark-theme (5:4.12.005) UNRELEASED; urgency=medium
+
+  * the gtk3 theme should now work much better with other WM themes 
+  * DEB: removed the conflict with gnome-session, only recommend gksu & yad 
+
+ -- ssf <ssf@NeverEver.com>  Tue, 19 Dec 2017 15:25:22 -0600
+
+dark-theme (5:4.12.004) UNRELEASED; urgency=medium
+
+  * brighter colors for the terminal colorsheme
+  * gtk3 osd fixes
+
+ -- ssf <ssf@NeverEver.com>  Sat, 16 Dec 2017 13:58:08 +0100
+
+dark-theme (5:4.12.003) UNRELEASED; urgency=medium
+
+  * cleanded some things
+  * updated gimp icon overrides
+
+ -- ssf <ssf@NeverEver.com>  Sat, 16 Dec 2017 11:04:21 +0100
+
+dark-theme (5:4.12.002) UNRELEASED; urgency=medium
+
+  * added a plank theme
+  * added onboard theme 
+
+ -- ssf <ssf@NeverEver.com>  Thu, 14 Dec 2017 17:42:33 +0100
+
+dark-theme (5:4.12.001) UNRELEASED; urgency=medium
+
+  * some gtk fies
+  * rename the theme
+
+ -- ssf <ssf@NeverEver.com>  Wed, 13 Dec 2017 00:49:01 +0100

@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+#re-enable the overlay scrollbars
+sed -i '/^#DarK$/,+1 d' /etc/environment
+#remove chromium theme
+if [ -f "/etc/chromium.d/DarK" ]; then
+	rm -f /etc/chromium.d/DarK
+fi
+if [ -f "/etc/chromium.d/DarK-HighContrast" ]; then
+	rm -f /etc/chromium.d/DarK-HighContrast
+fi
+#remove the backup files
+if [ -d "/usr/share/themes/DarK/backup" ]; then
+	rm -rf /usr/share/themes/DarK/backup
+fi
+if [ "$(readlink /etc/gtk/gtkrc)" = "gtkrc.dark" ]; then
+	rm -f /etc/gtk/gtkrc
+fi
+if [ "$(readlink /etc/gtk-2.0/settings.ini)" = "settings.ini.dark" ]; then
+	rm -f /etc/gtk-2.0/settings.ini
+fi
+if [ "$(readlink /etc/gtk-3.0/settings.ini)" = "settings.ini.dark" ]; then
+	rm -f /etc/gtk-3.0/settings.ini
+fi

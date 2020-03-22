@@ -1,4 +1,4 @@
-keep-articles-days 10
+keep-articles-days 30
 
 # EOF
 # a simple newsbeuter color scheme.

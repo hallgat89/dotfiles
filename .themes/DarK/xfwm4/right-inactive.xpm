@@ -1,1 +1,10 @@
-./right-active.xpm
+/* XPM */
+static char * left_active_xpm[] = {
+"1 5 2 1",
+" 	c None",
+".	c #000000",
+".",
+".",
+".",
+".",
+"."};

@@ -72,7 +72,7 @@ bindsym $mod+l exec ~/.scripts/jap3lock.sh ||  i3lock -c 000000
 bindsym $mod+g exec geany
 bindsym Shift+Control+Escape exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & htop'"
 bindsym $mod+y exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & mocp'"
-bindsym $mod+n exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & newsbeuter'"
+bindsym $mod+n exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & newsboat'"
 bindsym $mod+u exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & sudo apt update && sudo apt upgrade'"
 
 # open a non-recolored terminal with dvtm running
@@ -80,6 +80,11 @@ bindsym $mod+c exec x-terminal-emulator -e dvtm
 
 #alt+F4
 bindsym Mod1+F4 kill
+
+# fullscreen
+bindsym $mod+f              fullscreen toggle
+# global fullscreen: across all monitors
+bindsym $mod+shift+f        fullscreen toggle global
 
 # volume
 bindsym Control+F7 exec amixer -q sset Master 5%-
@@ -96,6 +101,8 @@ new_float normal 0 px
 hide_edge_borders smart
 for_window [class="Xfce4-notifyd"] floating enable; border inherit; focus mode_toggle
 no_focus   [class="Xfce4-notifyd"]
+for_window [title="Microsoft Teams Notification"] floating enable; border inherit; focus mode_toggle
+no_focus   [title="Microsoft Teams Notification"]
 for_window [class="(?i)qmmp"] border none
 for_window [class="(?i)tilda"] floating enable border none
 for_window [class="(?i)xboard"] floating enable
@@ -109,6 +116,7 @@ for_window [title="^screenkey"] floating enable
 for_window [title="^Music Player$"] floating enable
 for_window [title="^recordMyDesktop"] floating enable
 for_window [class="tdc"] floating enable
+for_window [class="Wfica"] fullscreen toggle
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$" title="^Friends$"] floating enable
@@ -126,8 +134,8 @@ for_window [title="^Steam Keyboard$"] floating enable
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
-font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 10
-font pango:Terminus 10px
+#font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 10
+#font pango:Terminus 10px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -287,7 +295,7 @@ bar {
         mode hide
         hidden_state hide
         modifier $mod
-        font pango: Terminus 10
+        #font pango: Terminus 10
     colors {
             background $bg
             statusline $af

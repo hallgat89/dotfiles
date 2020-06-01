@@ -65,7 +65,8 @@ bindsym $mod+Tab exec rofi -show window
 
 bindsym $mod+t exec x-terminal-emulator
 
-bindsym $mod+p exec exo-open --launch FileManager || x-terminal-emulator -e mc
+bindsym $mod+p exec xfce4-display-settings
+bindsym $mod+f exec exo-open --launch FileManager || x-terminal-emulator -e mc
 bindsym $mod+b exec exo-open --launch WebBrowser || x-www-browser
 bindsym $mod+m exec exo-open --launch MailReader || thunderbird || x-terminal-emulator -e mutt
 bindsym $mod+l exec ~/.scripts/jap3lock.sh ||  i3lock -c 000000
@@ -82,7 +83,7 @@ bindsym $mod+c exec x-terminal-emulator -e dvtm
 bindsym Mod1+F4 kill
 
 # fullscreen
-bindsym $mod+f              fullscreen toggle
+#bindsym $mod+f              fullscreen toggle
 # global fullscreen: across all monitors
 bindsym $mod+shift+f        fullscreen toggle global
 
@@ -292,7 +293,7 @@ bar {
         status_command    ~/.i3/conky.sh
         position          bottom
         workspace_buttons yes
-        mode hide
+        mode dock
         hidden_state hide
         modifier $mod
         #font pango: Terminus 10

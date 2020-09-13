@@ -1,4 +1,4 @@
-gtk_color_scheme="selected_fg_color:#ffffff\nselected_bg_color:#000000"
+gtk_color_scheme="selected_fg_color:#f2f1f1\nselected_bg_color:#7eae55"
 include "theme/colorsr.c"
 include "theme/mistr.c"
 include "theme/windowr.c"

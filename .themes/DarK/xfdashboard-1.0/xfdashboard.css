@@ -2,7 +2,7 @@
 	background-base-color:rgba(66,65,65,1);
 	background: @background-base-color;
 	color-border: rgba(0,0,0,1);
-	hilight-color: #000000;
+	hilight-color: #7eae55;
 	missing-icon: @try_icons("unknown", "image-missing", "gtk-missing-image");
 	view-icon: @try_icons("xfwm", "preferences-windows", @missing-icon);}
 

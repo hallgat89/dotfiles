@@ -2,5 +2,5 @@
 static char * thunarshortcutsview_selection_xpm[] = {
 "1 1 2 1",
 " 	c None",
-".	c #000000",
+".	c #7EAE55",
 "."};

@@ -6,6 +6,6 @@
 		<property name="factor">0.0</property>
 	</object>
 	<object id="colorize" class="ClutterColorizeEffect">
-		<property name="tint">#000000</property>
+		<property name="tint">#7eae55</property>
 	</object>
 </effects>

@@ -3,7 +3,7 @@ gtk_color_scheme="info_fg_color:#f1f2f2\ninfo_bg_color:#285CBB"
 gtk_color_scheme="warning_fg_color:#f1f2f2\nwarning_bg_color:#BB6F28"
 gtk_color_scheme="question_fg_color:#f1f2f2\nquestion_bg_color:#288ABB"
 gtk_color_scheme="error_fg_color:#f1f2f2\nerror_bg_color:#BB2835"
-gtk_color_scheme="other_fg_color:#f1f2f2\nother_bg_color:#000000"
+gtk_color_scheme="other_fg_color:#f1f2f2\nother_bg_color:#7eae55"
 gtk-color-palette="#000000:#252424:#323131:#F1F2F2:white:#BB2847:#BB2835:#BB286A:#BB28B0:#8428BB:#285CBB:#288ABB:#28B6BB:#28BB70:#5DBB28:#A2BB28:#BABB28:#BB9628:#BB6F28:#BB4E28"
 
 style"colors"{

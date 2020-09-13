@@ -13,7 +13,7 @@ menu.items.text.color: rgb:f1/f2/f2
 menu.items.disabled.text.color: rgb:76/77/77
 
 menu.items.active.bg: Flat Solid
-menu.items.active.bg.color: #000000
+menu.items.active.bg.color: #7eae55
 menu.items.active.text.color: #f1f2f2
 menu.separator.color: rgb:00/00/00
 

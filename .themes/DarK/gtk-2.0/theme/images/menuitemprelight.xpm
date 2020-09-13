@@ -2,7 +2,7 @@
 static char * menuitemprelight_xpm[] = {
 "10 6 2 1",
 " 	c None",
-".	c #000000",
+".	c #7EAE55",
 "          ",
 "          ",
 "          ",

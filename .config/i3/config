@@ -112,6 +112,7 @@ for_window [class="(?i)dclock"] floating enable, border pixel 1
 for_window [class="(?i)qmmp"] floating enable
 for_window [title="(?i)xterm"] floating enable, border pixel 1
 for_window [title="(?i)sakura$"] floating enable, border pixel 1
+for_window [class="(?i)x-terminal-emulator"] floating enable, border pixel 1
 for_window [class="(?i)Nitrogen"] floating enable
 for_window [title="^screenkey"] floating enable
 for_window [title="^Music Player$"] floating enable

@@ -1,0 +1,23 @@
+conky.config = {
+	out_to_x = false,
+	own_window = false,
+	out_to_console = true,
+	background = false,
+	max_text_width = 0,
+-- Update interval in seconds
+	update_interval = 2.0,
+	total_run_times = 0,
+	override_utf8_locale = true,
+
+};
+
+conky.text = [[
+
+[{ "full_text" : "${if_running mocp}[$moc_state] ${exec mocp -Q '%artist %title %ct  %tt' | sed 's/"//g'}${endif}"},
+ { "full_text" : "${mem}"},
+ { "full_text" : "${wireless_essid wlp3s0} (${wireless_link_qual wlp3s0}/${wireless_link_qual_max wlp3s0}) - ${addr wlp3s0}"},
+ { "full_text" : "${time %Y-%m-%d}"},
+ { "full_text" : "${time %H:%M:%S (%A)}"},
+ { "full_text" : "${exec amixer -c 0 get Master | grep "Mono:" | cut -d " " -f6}"}
+ ],
+]];

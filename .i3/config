@@ -35,7 +35,7 @@ exec gnome-keyring-daemon --start --components=pkcs11
 exec gnome-keyring-daemon --start --components=secrets
 
 # Own scripts
-exec ~/.scripts/dropboxcloser.sh
+#exec ~/.scripts/dropboxcloser.sh
 
 #change key input methods
 exec ibus-daemon
@@ -113,6 +113,7 @@ for_window [class="(?i)qmmp"] floating enable
 for_window [title="(?i)xterm"] floating enable, border pixel 1
 for_window [title="(?i)sakura$"] floating enable, border pixel 1
 for_window [class="(?i)Nitrogen"] floating enable
+for_window [class="(?i)zoom"] floating enable
 for_window [title="^screenkey"] floating enable
 for_window [title="^Music Player$"] floating enable
 for_window [title="^recordMyDesktop"] floating enable

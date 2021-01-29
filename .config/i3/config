@@ -4,7 +4,7 @@ set $mod Mod4
 workspace_layout tabbed 
 
 # solid background
-#exec hsetroot -solid '#000000'
+exec hsetroot -solid '#000000'
 
 # remove recently used files from pcmanfm
 #echo "" > ~/.local/share/recently-used.xbel &
@@ -13,7 +13,7 @@ workspace_layout tabbed
 exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
 
 # Wallpaper-based theme
-exec --no-startup-id .local/bin/wal -R
+#exec --no-startup-id .local/bin/wal -R
 # exec sleep 1 && ~/.scripts/restore_wal.sh
 
 # Settings
@@ -44,6 +44,7 @@ exec setxkbmap hu
 
 # Set wallpaper
 exec sleep 2 && nitrogen --restore
+#exec --no-startup-id xsetroot -solid "#ff00009"
       
 # Run a Composite manager
 exec compton
@@ -291,8 +292,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        #status_command    ~/.config/i3/conky.sh
-        status_command    i3status
+        status_command    ~/.config/i3/conky.sh
+        #status_command    i3status
         position          bottom
         workspace_buttons yes
         mode dock

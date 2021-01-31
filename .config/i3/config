@@ -4,7 +4,7 @@ set $mod Mod4
 workspace_layout tabbed 
 
 # solid background
-exec hsetroot -solid '#000000'
+#exec hsetroot -solid '#7790aa'
 
 # remove recently used files from pcmanfm
 #echo "" > ~/.local/share/recently-used.xbel &
@@ -44,7 +44,6 @@ exec setxkbmap hu
 
 # Set wallpaper
 exec sleep 2 && nitrogen --restore
-#exec --no-startup-id xsetroot -solid "#ff00009"
       
 # Run a Composite manager
 exec compton
@@ -120,6 +119,7 @@ for_window [title="^Music Player$"] floating enable
 for_window [title="^recordMyDesktop"] floating enable
 for_window [class="tdc"] floating enable
 for_window [class="Wfica"] fullscreen toggle
+for_window [class="(?i)zoom"] floating enable
 
 # https://github.com/ValveSoftware/steam-for-linux/issues/1040
 for_window [class="^Steam$" title="^Friends$"] floating enable

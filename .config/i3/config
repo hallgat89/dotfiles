@@ -254,12 +254,12 @@ set_from_resource $fg i3wm.color8 #ffffff
 set_from_resource $bg i3wm.color0 #000000
 set_from_resource $af i3wm.color7 #ffffff
 
-# class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $af  $bg       $af
-client.focused_inactive $bg     $bg     $fg  $bg       $af
-client.unfocused        $bg     $bg     $fg  $bg       $af
-client.urgent           $bg     $bg     $fg  $bg       $af
-client.placeholder      $bg     $bg     $fg  $bg       $af
+# class                 border      backgr.     text indicator child_border
+client.focused          #222222     #555555     $af  $bg       $af
+client.focused_inactive #333333     $bg         $fg  $bg       $af
+client.unfocused        #333333     $bg         $fg  $bg       $af
+client.urgent           $bg         $bg         $fg  $bg       $af
+client.placeholder      $bg         $bg         $fg  $bg       $af
 
 client.background       $bg
 
@@ -292,8 +292,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command    ~/.config/i3/conky.sh
-        #status_command    i3status
+        #status_command    ~/.config/i3/conky.sh
+        status_command    i3status
         position          bottom
         workspace_buttons yes
         mode dock

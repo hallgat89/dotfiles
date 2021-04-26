@@ -302,7 +302,7 @@ bar {
         font pango: Terminus 10
     colors {
             background $bg
-            statusline $af
+            statusline #ffffff
             focused_workspace  #000000 #000000 #00ffff
             active_workspace   #000000 #ffffff #000000
             inactive_workspace #000000 #000000 #888888

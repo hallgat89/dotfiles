@@ -111,6 +111,7 @@ for_window [class="(?i)xclock"] floating enable, border pixel 1
 for_window [class="(?i)dclock"] floating enable, border pixel 1
 for_window [class="(?i)qmmp"] floating enable
 for_window [title="(?i)xterm"] floating enable, border pixel 1
+for_window [title="cool-retro-term"] floating enable
 for_window [title="(?i)sakura$"] floating enable, border pixel 1
 for_window [class="(?i)x-terminal-emulator"] floating enable, border pixel 1
 for_window [class="(?i)Nitrogen"] floating enable

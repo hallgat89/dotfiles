@@ -47,7 +47,6 @@ exec sleep 2 && nitrogen --restore
       
 # Run a Composite manager
 exec compton
-#exec compton --config ~/.i3/i3_compton.conf
 
 #refresh i3wm (needed because the notification icons bgcolor)
 exec sleep 3 && i3-msg restart 

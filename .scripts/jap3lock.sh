@@ -34,3 +34,4 @@ gen_background
 
 # Lock again with the new background
 i3lock -c $BGCOLOR -t -i $BG
+#swaylock -c $BGCOLOR -t -i $BG

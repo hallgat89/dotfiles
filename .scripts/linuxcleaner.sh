@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # make HOME folder private just in case
-chmod 750 "$HOME"
+#chmod 750 "$HOME"
 
 # remove recently used files from pcmanfm
-echo "" > ~/.local/share/recently-used.xbel
+#echo "" > ~/.local/share/recently-used.xbel
 
 # remove Thumb.db files
 #find ~ -name 'Thumbs.db' -type f -delete
@@ -13,7 +13,7 @@ echo "" > ~/.local/share/recently-used.xbel
 #find ~ -name '.DS_Store' -type f -delete
 
 #clean thumbnails
-rm -rf ~/.thumbnails
+#rm -rf ~/.thumbnails
 
 #empty trash
 rm -rf ~/.local/share/Trash/files/*
@@ -22,10 +22,10 @@ rm -rf ~/.local/share/Trash/files/*
 rm ~/.bash_history
 
 #remove orphaned packages +data
-sudo deborphan --guess-data | xargs sudo apt-get -y remove --purge
+#sudo deborphan --guess-data | xargs sudo apt-get -y remove --purge
 
 #remove unnecessary packages
-sudo apt autoremove --purge $(deborphan)
+#sudo apt autoremove --purge $(deborphan)
 
 #remove other unneeded packages
 sudo apt clean

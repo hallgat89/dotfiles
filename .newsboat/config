@@ -10,3 +10,4 @@ color background white default
 color article    white default
 
 auto-reload yes
+browser "w3m"

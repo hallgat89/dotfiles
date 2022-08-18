@@ -73,7 +73,7 @@ bindsym $mod+g exec geany
 bindsym Shift+Control+Escape exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & htop'"
 bindsym $mod+y exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & mocp'"
 bindsym $mod+n exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & newsboat'"
-bindsym $mod+u exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & sudo apt update && sudo apt upgrade'"
+bindsym $mod+u exec x-terminal-emulator -e "bash -c '(cat ~/.cache/wal/sequences &) & sudo apt update && sudo apt upgrade && sudo snap refresh'"
 
 # open a non-recolored terminal with dvtm running
 bindsym $mod+c exec x-terminal-emulator -e dvtm

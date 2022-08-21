@@ -8,5 +8,7 @@ config_version: 2
 settings:
   input.insert_mode.auto_load:
     global: true
+  url.default_page:
+    global: about:blank
   url.start_pages:
     global: https://ecosia.org

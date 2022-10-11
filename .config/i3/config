@@ -22,7 +22,8 @@ exec xfce4-volumed
 exec xfce4-power-manager
 exec lxpolkit
 exec nm-applet
-exec xfce4-notifyd
+#exec xfce4-notifyd
+exec dunst
 
 # Volumeicon-alsa
 exec pnmixer
@@ -47,6 +48,7 @@ exec sleep 2 && nitrogen --restore
       
 # Run a Composite manager
 exec picom
+exec --no-startup-id conky
 
 #refresh i3wm (needed because the notification icons bgcolor)
 #exec sleep 3 && i3-msg restart 
@@ -237,31 +239,14 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
-# colors
-# class                 border  backgr. text    indicator child_border
-#client.focused          #333333 #555555 #ffffff #2e9ef4   #285577
-#client.focused_inactive #333333 #111111 #ffffff #484e50   #5f676a
-#client.unfocused        #333333 #111111 #888888 #292d2e   #222222
-#client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
-# Set colors from Xresources
-# Change 'color7' and 'color2' to whatever colors you want i3 to use
-# from the generated scheme.
-# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
-# it fails to get colors from Xresources for some reason.
-set_from_resource $fg i3wm.color8 #ffffff
-set_from_resource $bg i3wm.color0 #000000
-set_from_resource $af i3wm.color7 #ffffff
-
 # class                 border      backgr.     text indicator child_border
-client.focused          #222222     #555555     $af  $bg       $af
-client.focused_inactive #333333     $bg         $fg  $bg       $af
-client.unfocused        #333333     $bg         $fg  $bg       $af
-client.urgent           $bg         $bg         $fg  $bg       $af
-client.placeholder      $bg         $bg         $fg  $bg       $af
+client.focused          #222222     #555555     #ffffff     #000000     #ffffff
+client.focused_inactive #333333     #000000     #ffffff     #000000     #ffffff
+client.unfocused        #333333     #000000     #ffffff     #000000     #ffffff
+client.urgent           #000000     #000000     #ffffff     #000000     #ffffff
+client.placeholder      #000000     #000000     #ffffff     #000000     #ffffff
 
-client.background       $bg
+client.background       #000000
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -300,8 +285,8 @@ bar {
         modifier $mod
         font pango: Terminus 10
     colors {
-            background $bg
-            statusline $fg
+            background #000000
+            statusline #ffffff
             #separator  #00ffff
             focused_workspace  #000000 #000000 #00ffff
             active_workspace   #000000 #ffffff #000000

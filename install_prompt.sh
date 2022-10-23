@@ -9,8 +9,8 @@ TOKENEXISTS=`cat ~/.bashrc | grep "$RNDTOKEN" | wc -l`
 
 if [ "$TOKENEXISTS" -eq "0" ]
 then
-	cat $FULLPATH >> ~/.bashrc
 	echo "###### Do not delete this token: $RNDTOKEN ######" >> ~/.bashrc
+	cat $FULLPATH >> ~/.bashrc
 else
 	echo "Smart prompt already installed"
 	exit 1

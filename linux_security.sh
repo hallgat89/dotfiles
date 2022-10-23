@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# enable firewall, allow connections wrom local network
+# enable firewall, allow connections from local network
 sudo ufw enable
 sudo ufw allow from 192.168.0.0/24
 

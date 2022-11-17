@@ -135,6 +135,7 @@ alias readen="espeak -v en -s 100 -f"
 alias wallpaper="~/.scripts/updatepywal.sh"
 alias git-napalm="git fetch && git reset --hard && git clean -f -d && git pull --ff-only"
 alias mc="~/.scripts/mc-wrapper.sh"
+alias chilltop="while true; do mplayer http://hyades.shoutca.st:8043/autodj; done;"
 TERMINAL="sakura" #for i3wm
 umask 077 #no one views my files, no one!
 ~/.scripts/randomascii.sh

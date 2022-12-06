@@ -30,11 +30,14 @@ function hallgat_prompt {
         branch='detached*'
       fi
       git_branch="($branch) "
+      if [[ $(git stash list | wc -l) != 0 ]]; then
+        git_branch="$git_branch ST"
+      fi
     else
       git_branch=""
     fi
   else
-    git_branch=""
+     git_branch=""
   fi
   
   #command timer stop

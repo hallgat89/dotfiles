@@ -21,6 +21,9 @@ rm -rf ~/.local/share/Trash/files/*
 #remove bash history
 rm ~/.bash_history
 
+# Clean thumbnails
+exec find ~/.thumbnails -type f -atime +7 -exec rm {} \; &
+
 #remove orphaned packages +data
 #sudo deborphan --guess-data | xargs sudo apt-get -y remove --purge
 

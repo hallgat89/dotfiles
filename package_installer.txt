@@ -2,7 +2,7 @@ lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings alsa-base grub-pc xfce4
 
 OPENBOX='openbox obmenu obconf tint2 gsimplecal'
 
-TERMINAL='mc moc htop newsboat ssh mutt urlview urlscan w3m curl wget dvtm'
+TERMINAL='mc moc htop newsboat ssh w3m curl wget dvtm'
 
 JAPANESE='ibus ibus-anthy fonts-vlgothic fonts-takao ttf-kochi-mincho fonts-dejima-mincho fonts-horai-umefont'
 

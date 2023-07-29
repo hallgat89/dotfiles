@@ -118,7 +118,6 @@ icol='\[\e[36m\]' # infocolor
 gitcol='\[\e[32m\]' # color of git branch
 
 #wal colortheme
-#(~/.scripts/wal.sh -r -t &)
 (cat ~/.cache/wal/sequences &)
 
 export PATH="${PATH}:${HOME}/.local/bin/"

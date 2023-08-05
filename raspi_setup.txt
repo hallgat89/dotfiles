@@ -1,0 +1,12 @@
+After raspberry install:
+
+1. Rapberry config: Disable automatic login
+2. install stuff
+3. sudo apt install lightdm-gtk-greeter-settings
+4. sudo mcedit /etc/lightdm/lightdm.conf  -> greeter-session=lightdm-gtk-greeter
+
+5. install snap?  
+	sudo mcedit /etc/profile
+	
+If snap apps can't open file-chooser:
+sudo apt install xdg-desktop-portal-gtk

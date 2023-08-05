@@ -120,8 +120,6 @@ gitcol='\[\e[32m\]' # color of git branch
 #wal colortheme
 (cat ~/.cache/wal/sequences &)
 
-export PATH="${PATH}:${HOME}/.local/bin/"
-
 alias fuck="killall" #tell those processes to fuck off
 alias c="clear"
 alias todo="~/.scripts/todo.sh"

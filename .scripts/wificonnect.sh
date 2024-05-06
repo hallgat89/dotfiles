@@ -2,6 +2,7 @@
 
 #
 # Based on http://www.linuxquestions.org/questions/linux-general-1/wifi-connect-script-tested-in-ubuntu-772646/
+# Requires wireless-tools package
 #
 
 #INTERFACES=~/tmp/interfaces

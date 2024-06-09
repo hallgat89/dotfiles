@@ -136,6 +136,7 @@ alias wallpaper="~/.scripts/updatepywal.sh"
 alias git-napalm="git fetch && git reset --hard && git clean -f -d && git pull --ff-only"
 alias mc="~/.scripts/mc-wrapper.sh"
 alias chillsky="while true; do mplayer http://hyades.shoutca.st:8043/autodj; done;"
+alias shonanbeach="while true; do mplayer http://150.95.174.29:8000/by_the_sea; done;"
 TERMINAL="sakura" #for i3wm
 umask 077 #no one views my files, no one!
 ~/.scripts/randomascii.sh

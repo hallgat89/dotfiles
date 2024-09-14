@@ -10,4 +10,7 @@ color background white default
 color article    white default
 
 auto-reload yes
-browser "w3m"
+# the snap version requires xdg-open
+browser "xdg-open %u"
+
+#browser "w3m"

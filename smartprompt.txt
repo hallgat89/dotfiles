@@ -126,7 +126,6 @@ alias todo="~/.scripts/todo.sh"
 alias did="~/.scripts/todo.sh -d"
 alias todol="~/.scripts/todo.sh -l"
 alias pipes="~/.scripts/pipes.sh"
-alias linuxcleaner="~/.scripts/linuxcleaner.sh"
 alias wificonnect="~/.scripts/wificonnect.sh"
 alias linuxupdater="sudo apt update && sudo apt upgrade && sudo snap refresh"
 alias termtime='while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-11));echo -e "\e[31m`date +%r`\e[39m";tput rc;done &'
